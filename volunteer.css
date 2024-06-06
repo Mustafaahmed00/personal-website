@@ -1,0 +1,111 @@
+/* Basic reset to remove margin, padding, and set a consistent box-sizing */
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and readable font */
+    background-color: #E3EAF2; /* Soft, neutral background for less strain */
+    color: #2E4053; /* Dark slate for high readability */
+    line-height: 1.8;
+    padding: 40px;
+}
+
+.content {
+    background-color: #f7f7f7; /* Light grey background */
+    border-left: 5px solid #0056b3; /* Blue left border for a modern touch */
+    padding: 20px; /* Adds space inside the box */
+    margin: 20px auto; /* Adds space outside the box, centered */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 960px; /* Restricts max width for better reading */
+}
+
+/* Enhancing the title */
+.content h2 {
+    font-weight: 700; /* Bold font for the heading */
+    color: #0158b6; /* Dark color for the title */
+    padding-bottom: 10px; /* Space below the title */
+}
+
+/* Darker text color for body */
+.content p {
+    color: #333; /* Darker grey for readability */
+    font-size: 17px; /* Suitable text size */
+    line-height: 1.7; /* Improved line spacing for readability */
+}
+
+div.content {
+    background-color: #FFFFFF; /* Crisp white for content areas */
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12); /* Subtle shadow for depth */
+    border-radius: 12px; /* Smooth, rounded corners for a modern touch */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactive effects */
+    border-left: 5px solid #0056b3;
+
+}
+
+div.content:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18); /* Deeper shadow for a popping effect */
+}
+
+h2 {
+    color: #0056b3; /* Brighter blue for attention-grabbing headings */
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+p, li {
+    font-size: 17px; /* Comfortable reading size */
+    margin-bottom: 20px;
+}
+
+a {
+    color: #1A5276; /* Deep blue for elegant links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease; /* Color change on hover for visual feedback */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #154360; /* Darker shade of link color for hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: url('https://path_to_your_icon/dot.svg') no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    div.content {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%; /* Full width on smaller devices */
+        box-shadow: none; /* Flat design on mobile for less distraction */
+        transform: none; /* Disable lift effect on mobile */
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, li {
+        font-size: 16px; /* Slightly smaller font for mobile optimization */
+    }
+}
