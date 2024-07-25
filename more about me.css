@@ -1,0 +1,407 @@
+/* Basic reset to remove margin, padding, and set a consistent box-sizing */
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern and readable font */
+    background-color: #c3d9f1; /* Soft, neutral background for less strain */
+    color: #273747; /* Dark slate for high readability */
+    line-height: 1.8;
+    padding: 40px;
+}
+
+.content {
+    background-color: #FFFFFF; /* Light grey background */
+    border-left: 5px solid #0056b3; /* Blue left border for a modern touch */
+    padding: 20px; /* Adds space inside the box */
+    margin: 20px auto; /* Adds space outside the box, centered */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 960px; /* Restricts max width for better reading */
+}
+
+/* Enhancing the title */
+.content h2 {
+    font-weight: 700; /* Bold font for the heading */
+    color: #1572d5; /* Dark color for the title */
+    padding-bottom: 10px; /* Space below the title */
+    text-shadow: 2px 2px  rgb(190, 233, 233);
+}
+
+/* Darker text color for body */
+.content p {
+    color: #333; /* Darker grey for readability */
+    font-size: 17px; /* Suitable text size */
+    line-height: 1.7; /* Improved line spacing for readability */
+}
+
+div.content {
+    background-color: #FFFFFF; /* Crisp white for content areas */
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12); /* Subtle shadow for depth */
+    border-radius: 12px; /* Smooth, rounded corners for a modern touch */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactive effects */
+    border-left: 5px solid #0056b3;
+
+}
+
+div.content:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18); /* Deeper shadow for a popping effect */
+}
+
+h2 {
+    color: #245b96; /* Brighter blue for attention-grabbing headings */
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: normal;
+    text-shadow: 2px 2px rgb(171, 228, 228);
+}
+
+p, li {
+    font-size: 17px; /* Comfortable reading size */
+    margin-bottom: 20px;
+}
+
+a {
+    color: #1A5276; /* Deep blue for elegant links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease; /* Color change on hover for visual feedback */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #154360; /* Darker shade of link color for hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: url('https://path_to_your_icon/dot.svg') no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    div.content {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%; /* Full width on smaller devices */
+        box-shadow: none; /* Flat design on mobile for less distraction */
+        transform: none; /* Disable lift effect on mobile */
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, li {
+        font-size: 16px; /* Slightly smaller font for mobile optimization */
+    }
+}
+.vr-section {
+    background-color: #FFFFFF; /* Crisp white for content areas */
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12); /* Subtle shadow for depth */
+    border-radius: 12px; /* Smooth, rounded corners for a modern touch */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactive effects */
+    border-left: 5px solid #0056b3;
+}
+.vr-section hr {
+    margin-bottom: 20px;
+}
+
+.vr-image {
+    width: 120%; /* Responsive images that fill the container */
+    max-width: 400px; /* Limiting maximum width to keep images small */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the set height and width, cropping as needed */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Optional: adds rounded corners to your images */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border: 2px solid Black;
+}
+.vr-project {
+    margin-bottom: 20px;
+}
+.section {
+    background-color: #FFFFFF;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    border-radius: 12px;
+    border-left: 5px solid #0056b3;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Centers the image */
+    border-radius: 8px;
+    border: 2px solid Black;
+}
+
+h2, h3 {
+    color: #0056b3;
+    text-align: center;
+    text-shadow: 2px 2px rgb(171, 228, 228);
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .section {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .project-image {
+        max-width: 100%;
+    }
+
+    h2, h3 {
+        font-size: 19px;/* Adjust size for smaller screens */
+        text-transform: uppercase; /* Makes the text uppercase for more impact */
+        color: #024082; /* Maintains your primary color */
+        text-align: center; /* Centers the titles */
+        font-weight: 700; /* Bold font weight for better visibility */
+        letter-spacing: 1px; /* Adds spacing between letters */
+        text-shadow: 1px 1px 0px #b3c6ff, 2px 2px 0px #99b3ff, 3px 3px 0px #809fff, 4px 4px 0px #668cff, 5px 5px 0px #4d79ff; /* Multiple layers of shadows to create depth */
+        transition: text-shadow 0.3s ease; /* Smooth transition for text-shadow effects */
+    }
+    h2:hover, h3:hover {
+        text-shadow: 2px 2px 0px #b3c6ff, 4px 4px 0px #99b3ff, 6px 6px 0px #809fff, 8px 8px 0px #668cff, 10px 10px 0px #4d79ff; /* Increased shadow on hover for a more pronounced effect */
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+.project-image {
+    width: 48%; /* Each image takes up slightly less than half of the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    border: 2px solid Black;
+}
+.virtual-tour-link {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.virtual-tour-link:hover {
+    background-color: #003366;
+}
+
+.image-container {
+    display: flex;   /* Establishes a flex container */
+    justify-content: space-around; /* Distributes space around items */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Allows images to wrap into a new line if not enough space */
+}
+.robot-image {
+    width: calc(50% - 30px); /* Adjust width as necessary, here it's set to take up less than half of the container so they fit side by side */
+    height: auto; /* Maintains the aspect ratio of the images */
+    margin: 5px; /* Adds a small space between the images */
+    border: 2px solid Black;
+}
+
+@media (max-width: 768px) {
+    .project-image {
+        max-width: 100%; /* Allows each image to take full width of the container on smaller screens */
+        margin: 5px 0; /* Adjusts margin for vertical layout */
+    }
+
+    .image-container {
+        flex-direction: column; /* Stacks images vertically on smaller screens */
+    }
+}
+
+
+.featured-image {
+    width: 50%; /* Sets each image to take up 50% of the container width */
+    height: 350px; /* Optional: You can set a fixed height for both images */
+    object-fit: cover; /* Ensures the image covers the assigned area without distortion, may crop */
+    margin: 10px; /* Adds spacing between images */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+    border: 2px dashed Black;
+}
+
+@media (max-width: 768px) {
+    .featured-image {
+        width: 100%; /* Full width for each image on smaller screens for better visibility */
+        margin-bottom: 10px; /* Adds space between stacked images */
+    }
+    .image-container {
+        flex-direction: column; /* Stacks images vertically on smaller screens */
+    }
+}
+
+.figma-projects {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts spacing around project thumbnails */
+}
+
+.project-link {
+    width: 30%; /* Adjust based on how many projects per row */
+    margin: 10px;
+    text-decoration: none;
+    color: #333; /* Dark text for readability */
+}
+
+.project-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Slightly rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid Black;
+}
+
+.project-title {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .project-link {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+.robotics-section {
+    background-color: #FFFFFF; /* White background for content areas */
+    max-width: 960px;
+    margin: 40px auto; /* Centering and providing margin for aesthetics */
+    padding: 40px; /* Padding for content inside */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12); /* Subtle shadow for depth */
+    border-radius: 12px; /* Smooth, rounded corners for a modern touch */
+    border-left: 5px solid #0056b3; /* Blue border for consistency with other sections */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactive effects */
+}
+
+.robotics-section .image-container {
+    display: flex;   /* Establishes a flex container */
+    justify-content: center; /* Centers the image horizontally within the container */
+    align-items: center; /* Aligns items vertically, which is useful if you have text beside the image */
+    margin-bottom: 20px; /* Adds some space below the image */
+}
+
+.robotics-section .image-container img {
+    max-width: 50%; /* Ensures the image is responsive and does not overflow its container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+
+.robotics-section h2, .robotics-section h3 {
+    color: #0056b3; /* Ensuring header colors are consistent */
+    text-align: center; /* Center aligning the headers */
+    font-weight: 700; /* Bold font weight for better visibility */
+    margin-bottom: 20px; /* Space below headers */
+}
+
+.robotics-section p {
+    color: #333; /* Standard text color for readability */
+    font-size: 17px; /* Comfortable reading size */
+    line-height: 1.7; /* Proper line spacing */
+    text-align: justify; /* Justified text for a clean, aligned look */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+.robotics-section img {
+    width: 100%; /* Full width images */
+    max-width: 300px; /* Maximum width for images to keep them uniform */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for images */
+    border: 2px solid Black;
+}
+
+.robotics-section .robot-kits {
+    display: flex;
+    justify-content: space-around; /* Distributing space evenly around the kit images */
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+}
+
+.robotics-section .kit {
+    width: 280px; /* Set width for each kit container */
+    margin: 10px; /* Margin around each kit */
+    padding: 15px; /* Padding inside each kit container */
+    background: #f7f7f7; /* Light grey background for kit boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Text aligned to the left */
+}
+
+@media (max-width: 768px) {
+    .robotics-section {
+        padding: 20px; /* Reduced padding on smaller screens */
+        margin: 20px auto; /* Adjusted margin */
+        box-shadow: none; /* Remove shadow on smaller screens for a cleaner look */
+        transform: none; /* Disable hover effects */
+    }
+
+    .robotics-section h2, .robotics-section h3 {
+        font-size: 22px; /* Smaller font size for headers on mobile */
+    }
+
+    .robotics-section p {
+        font-size: 16px; /* Smaller font size for text on mobile */
+    }
+
+    .robotics-section img {
+        max-width: 100%; /* Full width images on smaller screens */
+    }
+
+    .robotics-section .robot-kits {
+        flex-direction: column; /* Stack kits vertically on smaller screens */
+    }
+
+    .robotics-section .kit {
+        width: 100%; /* Full width kits on smaller screens */
+    }
+}
+
