@@ -1,3 +1,5 @@
+// certifications.js
+
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".certification-card");
     let delay = 0;

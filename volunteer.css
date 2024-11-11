@@ -109,3 +109,11 @@ li {
         font-size: 16px; /* Slightly smaller font for mobile optimization */
     }
 }
+.team-photo {
+    width: 100%;          /* Makes the image take up the full width of its container */
+    max-width: 500px;     /* Limits the image width to 300px */
+    height: auto;         /* Maintains the aspect ratio */
+    margin-top: 10px;     /* Adds some space above the image */
+    border-radius: 8px;   /* (Optional) Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Optional) Adds a subtle shadow */
+}
